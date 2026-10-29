@@ -1,0 +1,249 @@
+
+.ai-readme-page {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f8fafc;
+  color: #1e293b;
+  font-family: inherit;
+}
+
+.ai-readme-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+  color: #475569;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ai-readme-back:hover {
+  color: #7c3aed;
+  background: #f5f3ff;
+  border-color: #c4b5fd;
+}
+
+.ai-readme-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.ai-readme-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+.ai-readme-header h1 {
+  margin: 0 0 8px;
+  font-size: clamp(24px, 3vw, 30px);
+  letter-spacing: -0.6px;
+}
+
+.ai-readme-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.ai-readme-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.ai-readme-panel {
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
+}
+
+.ai-readme-panel h2 {
+  margin: 0 0 10px;
+  font-size: 19px;
+}
+
+.ai-readme-subtitle {
+  margin: 0 0 24px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.ai-readme-panel form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ai-readme-panel label {
+  margin-top: 8px;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.ai-readme-panel input,
+.ai-readme-panel textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  color: #1e293b;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ai-readme-panel textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.ai-readme-panel input:focus,
+.ai-readme-panel textarea:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.12);
+}
+
+.ai-readme-generate {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 12px;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #7c3aed;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ai-readme-generate:hover {
+  background: #6d28d9;
+  transform: translateY(-1px);
+}
+
+.ai-readme-output-heading,
+.ai-readme-output-heading > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ai-readme-output-heading {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.ai-readme-output-heading > div {
+  color: #7c3aed;
+}
+
+.ai-readme-output-heading h2 {
+  margin: 0;
+  color: #1e293b;
+}
+
+.ai-readme-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 11px;
+  border: 1px solid #ddd6fe;
+  border-radius: 8px;
+  background: #f5f3ff;
+  color: #6d28d9;
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.ai-readme-copy:hover {
+  background: #ede9fe;
+}
+
+.ai-readme-empty {
+  display: flex;
+  min-height: 320px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+.ai-readme-empty h3 {
+  margin: 16px 0 8px;
+  color: #475569;
+  font-size: 16px;
+}
+
+.ai-readme-empty p {
+  max-width: 280px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.ai-readme-preview {
+  min-height: 320px;
+  max-height: 650px;
+  overflow: auto;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #334155;
+  font-family: monospace;
+  font-size: 13px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+  .ai-readme-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .ai-readme-page {
+    padding: 18px;
+  }
+
+  .ai-readme-panel {
+    padding: 18px;
+  }
+
+  .ai-readme-header {
+    align-items: flex-start;
+  }
+}

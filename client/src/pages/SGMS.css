@@ -1,0 +1,261 @@
+
+.sgms-page {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f8fafc;
+  color: #1e293b;
+  font-family: inherit;
+}
+
+.sgms-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #475569;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sgms-back:hover {
+  color: #7c3aed;
+  border-color: #c4b5fd;
+  background: #f5f3ff;
+}
+
+.sgms-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.sgms-heading-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+.sgms-header h1 {
+  margin: 0 0 8px;
+  font-size: clamp(23px, 3vw, 30px);
+  font-weight: 750;
+  letter-spacing: -0.7px;
+}
+
+.sgms-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.sgms-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.sgms-stat-card {
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sgms-stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.07);
+}
+
+.sgms-stat-card > svg {
+  color: #7c3aed;
+}
+
+.sgms-stat-card p {
+  margin: 14px 0 8px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.sgms-stat-card h2 {
+  margin: 0;
+  font-size: 29px;
+  color: #0f172a;
+}
+
+.sgms-panel {
+  margin-bottom: 24px;
+  padding: 25px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
+}
+
+.sgms-panel > h2 {
+  margin: 0 0 22px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.sgms-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.sgms-form input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1e293b;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.sgms-form input:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.12);
+}
+
+.sgms-add-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #7c3aed;
+  color: #ffffff;
+  font-weight: 650;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.sgms-add-btn:hover {
+  background: #6d28d9;
+  transform: translateY(-1px);
+}
+
+.sgms-empty {
+  padding: 30px 12px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  color: #64748b;
+  text-align: center;
+  font-size: 14px;
+}
+
+.sgms-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.sgms-table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.sgms-table th {
+  padding: 14px 16px;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sgms-table td {
+  padding: 16px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+}
+
+.sgms-table tbody tr:hover {
+  background: #faf8ff;
+}
+
+.sgms-grade {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  padding: 5px 9px;
+  border-radius: 7px;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.sgms-grade.fail {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.sgms-delete-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fecaca;
+  border-radius: 9px;
+  background: #fff1f2;
+  color: #dc2626;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sgms-delete-btn:hover {
+  background: #dc2626;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .sgms-page {
+    padding: 18px;
+  }
+
+  .sgms-stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .sgms-form {
+    grid-template-columns: 1fr;
+  }
+
+  .sgms-panel {
+    padding: 18px;
+  }
+
+  .sgms-header {
+    align-items: flex-start;
+  }
+}
