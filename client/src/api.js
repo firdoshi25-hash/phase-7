@@ -1,13 +1,14 @@
 import axios from "axios";
 
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+
 const api = axios.create({
-  baseURL: "http://localhost:8000/api",
+  baseURL: `${API_URL}/api`,
   headers: {
     "Content-Type": "application/json",
   },
 });
 
-// Attach JWT token to every API request
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem("token");
@@ -18,9 +19,7 @@ api.interceptors.request.use(
 
     return config;
   },
-  (error) => {
-    return Promise.reject(error);
-  }
+  (error) => Promise.reject(error)
 );
 
 export default api;
